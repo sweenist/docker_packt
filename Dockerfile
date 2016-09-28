@@ -8,8 +8,4 @@ ONBUILD ADD sshd_config /etc/ssh/sshd_config
 
 CMD /usr/sbin/sshd -D
 
-USER nobody
-WORKDIR /tmp
-ENV foobar "Sweens"
-
 EXPOSE 2222
